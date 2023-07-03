@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(5, 5, 42);
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+        background-color: rgb(57, 57, 181);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      .dava {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+      }
+      .leftsection {
+        font-size: 3rem;
+        margin: 70px 0;
+      }
+      .leftsection .buttons .btn {
+        padding: 12px;
+        background-color: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .leftsection .buttons {
+        padding: 10px 0;
+      }
+      .rightsection {
+        width: 30px;
+      }
+      .firstsection > div {
+        width: 30%;
+        align-items: center;
+      }
+      .rightsection img {
+        width: 80%;
+        margin: 50px 0;
+      }
+      .coloring {
+        color: rgb(197, 88, 239);
+      }
+      ul li a {
+        color: azure;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        color: rgb(165, 42, 142);
+        font-size: 1.04rem;
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        
+      }
+      main hr {
+        border: 0;
+        background-color: rgb(49, 94, 220);
+        margin: 120px 0;
+        height: 3px;
+      }
+      
+      .secondsection h1 {
+        font-size: 1.9rem;
+        height: 5vw;
+      }
+      .thirdsection {
+        max-width: 80vw;
+        margin: auto;
+      }
+      .thirdsection h1 {
+        font-size: 1.9rem;
+        height: 5vw;
+      }
+       table {
+        background-color: rgb(3, 41, 77);
+        
+        width: 100%;
+        height: 40%;
+        align-content: center;
+      }
+      .table,
+      th,
+      td {
+        border: 1px solid white;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40;
+        text-align: center;
+        background-color:  rgb(3, 41, 77);
+        color: white;
+      }
+      .fourthsection {
+        max-width: 80vw;
+        margin: auto;
+      }
+      .fourthsection h1 {
+        font-size: 1.9rem;
+        height: 5vw;
+      }
+      footer {
+        background-color: black;
+        height: 120px;
+        margin: 120px 0 0 0;
+      }
+      .footer{
+        background-color: #24262b;
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        padding: 70px 0;
+        
+
+      }
+      .container{
+        max-width: 1170px;
+        
+        margin: auto;
+      }
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      ul{
+        list-style: none;
+      }
+      .footer-col{
+        width: 25%;
+        padding: 0 15px;
+      }
+      .footer-col h3{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        position: relative;
+        
+      }
+      .footer-col h3::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+      }
+      .footer-col ul li a{
+        font-size: 16px;
+        transition: 0.3s ease;
+
+      }
+      .footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left: 8px;
+      }
+      .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgb(255, 255,255,0.2);
+        margin:0  10px  10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: 0.3s ease;
+
+      }
+      .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #5569d8;
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="dava">Om Ghodke Portfolio</div>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-outline-primary"  style="height: 40px; width:auto;  border:none;margin: 0 23px;"><a href="index.html" style="text-decoration: none;color:white">Home </a></button>
+          
+          <button type="button" class="btn btn-outline-primary" style="height: 40px; width: auto;border:none;margin: 0 23px;"  style="width: 50px;" ><a href="Aboutus.html" style="text-decoration: none;color:white"> About</a></button>
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary"  style="height: 40px; width:auto;border:none;margin: 0 23px;"><a href="certificates.pdf" style="text-decoration: none;color:white">Certifications and Extracurricular activities</a></button>
+            
+            <button type="button" class="btn btn-outline-primary" style="height: 40px; width: auto;border:none;margin: 0 23px;"  style="width: 50px;" ><a href="Upload/omproject - Copy" style="text-decoration:none;"><span style="color: white;">Projects </span></a></button>
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+              <button type="button" class="btn btn-outline-primary"  style="height: 40px; width:auto;border:none;margin: 0 23px;"><span style="text-decoration: none;"><a href="https://wa.me/7820867672 ;" style="text-decoration: none;" ></span><span style="color: white;">Contact Me</span></a> </button>
+              
+              <button type="button" class="btn btn-outline-primary" style="height: 40px; width: auto; border:none;margin: 0 23px;"  style="width: 50px;" ><a href="Resume.pdf" style="text-decoration: none;color:white;">Resume</a> </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My Name Is<span class="coloring"> Om Ghodke</span>
+          <div>I am a Web Developer</div>
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary"  style="height: 40px; width:200px;">
+              <a href="Resume.pdf" style="text-decoration: none; color:white;" >Download Resume</a></button>
+            
+            <button type="button" class="btn btn-outline-primary" style="height: 40px; width: 200px; "  style="width: 50px;" >
+              <a href="https://www.linkedin.com/in/om-ghodke-0b3556230" style="text-decoration: none; color:white">Visit Linkedin</a></button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="omimg.png" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <h1>Education Details:</h1>
+        <div class="table">
+          <table>
+            <tr>
+              <th>Year</th>
+              <th>Qualification</th>
+              <th>Grade</th>
+            </tr>
+            <tr>
+              <td>2022-2023</td>
+              <td>B.Sc(Entire Computer Science)</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>2020-Feb</td>
+              <td>HSC(Science)</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <td>2018-Mar</td>
+              <td>SSC</td>
+              <td>A</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <hr />
+      <section class="thirdsection">
+        <h1>Technical Skills:</h1>
+        <div class="table">
+          <table>
+            <tr>
+              <th>Programming Languages Known</th>
+              <td>C#,C</td>
+            </tr>
+            <tr>
+              <th>Web Technologies</th>
+              <td>ASP.NET,HTML5,CSS,Javascript,ReactJS</td>
+            </tr>
+            <tr>
+              <th>IDE</th>
+              <td>VS Code,Visual Studio 2015</td>
+            </tr>
+            <tr>
+              <th>OS</th>
+              <td>Windows</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <hr />
+      <section class="fourthsection">
+        <h1>Hobbies:</h1>
+        <table>
+          <tr>
+            <th>
+              Have an intrest to learn new new exploring things,with different
+              thinking
+            </th>
+          </tr>
+
+          <tr>
+            <th>Love to Play Chess</th>
+          </tr>
+
+          <tr>
+            <th>Keep Touch With Updates</th>
+          </tr>
+
+          <tr>
+            <th>Acting and Anchoring</th>
+          </tr>
+
+          <tr></tr>
+        </table>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row" style="display: flex;flex-wrap:wrap">
+            <div class="footer-col">
+              <h3>About Me</h3>
+              <p>Hello, I'm Om Sunil Ghodke from Solapur.I'm Completed  "Bachelor Of Computer Scince"(BSC-ECS) at Sangmeshwar College, Solapur
+                .I like to deal with Html,CSS,Javascript,Asp.Net,C#. My goal is to be a full stack developer. Also I'm always intrested in 
+                seeking knowledge about IT Field which helps me alot be more perfect.
+              </p>
+                
+            </div>
+          
+          
+          <div class="footer-col">
+            <h3>Contacts</h3>
+            <ul>
+              <div class="adress">
+              <p style="margin-right:50px " ><b>Address:&nbsp</b> Lokmangal Vihar Bale,<br>
+                          Block No 20 Barshi Road,<br>
+                          Solapur 413255<br>
+              <b>Email:</b>&nbsp;Omghodke7672@Gmail.Com
+              <b>Phone:</b>&nbsp+917820867672<br>
+              <b>Phone:</b>&nbsp+918379938710</p>
+              
+            </div>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>follow me on</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/om.ghodke.927?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com/om_g_0209?igshid=NGExMmI2YTkyZg=="><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/om-ghodke-0b3556230"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/Omghodke-0209"><i class="fab fa-github"></i></a>
+            </div>
+            </div>
+           
+          </div>
+          
+        
+    </footer>
+    
+  </body>
+</html>
